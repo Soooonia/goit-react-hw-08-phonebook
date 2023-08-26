@@ -59,9 +59,7 @@ import {
         .addCase(deleteContactAsync.pending, handlePending)
         .addCase(deleteContactAsync.fulfilled, handleFulfilled)
         .addCase(deleteContactAsync.rejected, handleRejected)
-        // .addCase(setFilter, (state, action) => {
-        //   state.filter = action.payload; 
-        // })
+      
         .addMatcher(
           isAnyOf(
             createContactThunk.rejected,

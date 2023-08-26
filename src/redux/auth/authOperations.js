@@ -46,6 +46,6 @@ export const logOut = async (body) => {
     const {data} = await instance.post('/users/logout', body)
     setToken(data.token)
     console.log('logOut data =>', data);
-    // setToken(`Bearer ${data.token}`);
+  
     return data
 }

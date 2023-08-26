@@ -32,6 +32,6 @@ export const deleteContact = async (contactId, token) => {
 export const getContact = async (body) => {
     const { data } = await instance.get('/contacts', body);
     setToken(data.token)
-    // console.log('getContact data =>', data);
+
     return data;
 };
