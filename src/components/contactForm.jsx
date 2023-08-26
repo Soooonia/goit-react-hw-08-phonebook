@@ -11,6 +11,9 @@ const ContactForm = () => {
   const [number, setNumber] = useState("");
   const contacts = useSelector((state) => state.contacts.items);
 
+
+
+  
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     if (name === "name") {
